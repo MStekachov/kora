@@ -16,7 +16,7 @@ export class OrderInformation extends Document {
 export const OrderInformationSchema = SchemaFactory.createForClass(OrderInformation)
 
 export interface IOrderInformation {
-  orderDate: Date;
-  sumOfOrder: number;
-  source: string;
+  readonly orderDate: Date;
+  readonly sumOfOrder: number;
+  readonly source: string;
 }

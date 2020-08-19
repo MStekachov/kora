@@ -20,8 +20,8 @@ export class User extends Document {
 export const UserSchema = SchemaFactory.createForClass(User);
 
 export interface IUser {
-  phone: string;
-  address: number;
-  name: string;
-  orderInformation: OrderInformation[];
+  readonly phone: string;
+  readonly address: number;
+  readonly name: string;
+  readonly orderInformation: OrderInformation[];
 }

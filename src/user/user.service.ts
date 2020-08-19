@@ -8,7 +8,7 @@ import { UserModule } from './user.module';
 @Injectable()
 export class UserService {
     constructor(@InjectModel(User.name) private userModel: Model<User>) {
-        //this.userModel = userModel
+        console.log(this.userModel)
     }
 
     async create(createUserDto: IUser): Promise<User> {
