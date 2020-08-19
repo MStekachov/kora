@@ -13,6 +13,6 @@ import { OrderInformation, OrderInformationSchema } from './schemas/order.inform
     ])
   ],
   providers: [UserService],
-  controllers: [UserController]
+  controllers: [UserController],
 })
 export class UserModule {}

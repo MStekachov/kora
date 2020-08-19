@@ -7,7 +7,7 @@ import { UserModule } from './user.module';
 
 @Injectable()
 export class UserService {
-    constructor(@InjectModel(User.name) public userModel: Model<User>) {
+    constructor(@InjectModel(User.name) private userModel: Model<User>) {
         //this.userModel = userModel
     }
 
